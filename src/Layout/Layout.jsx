@@ -32,7 +32,7 @@ const Layout = () => {
             className="dark:bg-[#6e6e6e] "
           >
             <div
-              className="dark:bg-black dark:text-[white] pl-[200px] pr-[200px] flex justify-between pt-[20px] pb-[20px] sm:flex-col sm:px-0 sm:py-0"
+              className="dark:bg-black dark:text-[white] flex justify-between pt-[20px] pb-[20px] flex-col px-0 py-0"
               onClick={onClose}
             >
               <h1 className="text-[20px] font-[400] font-[Satoshi] dark:text-[white] text-[#5d5c5c] p-[10px] hover:bg-[#9188918f] rounded-xl hover:duration-1000 hover:text-[#FFF]">
@@ -72,7 +72,11 @@ const Layout = () => {
               alt=""
             />
             <img className="w-[20px] h-[20px]  sm:hidden" src={useAv} alt="" />
-            <img className="w-[20px] h-[20px]" src={searchh} alt="" />
+            <img
+              className="w-[20px] h-[20px] sm:flex hidden"
+              src={searchh}
+              alt=""
+            />
 
             <img
               className="w-[20px] h-[20px]"
